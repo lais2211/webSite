@@ -29,7 +29,7 @@ const Hero = () => {
                         </button>
                     </div>
                 </div>
-                <div className='w-[550px] hidden bg-[#55e6a5] relative lg:flex items-center rounded-full h-[550px]'>
+                <div className='lg:w-[500px] mx-auto md:mx-0 mt-[2rem] lg:mt-0 lg:h-[500px] w-[225px] h-[225px] relative items-center rounded-full'>
                     <Image src="/images/u1.jpg" alt="user" layout='fill' className='object-cover rounded-full' />
                 </div>
             </div>
