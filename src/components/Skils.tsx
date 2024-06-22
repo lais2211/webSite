@@ -6,7 +6,7 @@ const Skils = () => {
         <h1 className='heading'>
             Educação & <span className='text-yellow-400'>Habilidades</span>
         </h1>
-        <div className='w-[80%] mx-auto pt-[4rem] md:pt-[8rem] grid grid-cols-1 md: grid-cols-2 gap-[2rem] items-center'>
+        <div className='w-[80%] mx-auto pt-[4rem] md:pt-[8rem] grid grid-cols-1 md:grid-cols-2 gap-[2rem] items-center'>
             <div>
             <SkilsItem title="Desenvolvedora Mobile e Web" year="2022-actual" resume='Trabalhei em projetos de estudos, como freelancer e para empresas privadas,utilizando de flutter e dart como linguagens principais e também tendo contato com ReactJs. Uma das empresas de grande porte a qual prestei serviços recentemente é uma empresa de e-commerce peruana chamada Favo. '/>
             </div>

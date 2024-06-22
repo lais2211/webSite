@@ -14,6 +14,7 @@ const HomePage = () => {
   const [nav, setNav] = useState(false);
   const openNave = () => setNav(true);
   const closeNav = () => setNav(false);
+  
   const homeRef = useRef<HTMLDivElement>(null);
   const servicosRef = useRef<HTMLDivElement>(null);
   const sobreRef = useRef<HTMLDivElement>(null);

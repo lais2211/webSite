@@ -21,7 +21,7 @@ const Nav = ({openNave, homeRef, servicosRef, sobreRef, projetosRef,  curriculoR
         window.open(linkedInUrl, '_blank');
     };
     return (
-        <div className="w-[100%] sticky x-[1000] tap-0 h-[12vh] bg-[#141c27] shadow-md">
+        <div className="w-[100%] tap-0 h-[12vh] bg-[#141c27] shadow-md">
             <div className="flex items-center justify-between w-[80%] mx-auto h-[100%]">
                 <h1 className="flex-[0.6] cursor-pointer text-[25px] text-white font-bold">SOFTWARE <span className="text-yellow-300">DEVELOPER</span></h1>
                 <div className="nav-link" onClick={() => handleLinkClick(homeRef)}>Home</div>
@@ -31,7 +31,7 @@ const Nav = ({openNave, homeRef, servicosRef, sobreRef, projetosRef,  curriculoR
                 <div className="nav-link" onClick={() => handleLinkClick(projetosRef)}>Projetos</div>
                 <div className="nav-link" onClick={handleLinkedInClickLinkedin}>Linkedin</div>
                 <div onClick={openNave}>
-                    <Bars3Icon className="w-[2rem] md: hidden h-[2rem] cursor-pointer text-yellow-300"></Bars3Icon>
+                    <Bars3Icon className="w-[2rem] md:hidden h-[2rem] cursor-pointer text-yellow-300"></Bars3Icon>
                 </div>
             </div>
         </div>
