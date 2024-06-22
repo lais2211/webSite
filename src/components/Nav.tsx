@@ -30,8 +30,9 @@ const Nav = ({openNave, homeRef, servicosRef, sobreRef, projetosRef,  curriculoR
                 <div className="nav-link" onClick={() => handleLinkClick(curriculoRef)}>Currículo</div>
                 <div className="nav-link" onClick={() => handleLinkClick(projetosRef)}>Projetos</div>
                 <div className="nav-link" onClick={handleLinkedInClickLinkedin}>Linkedin</div>
-                <div onClick={openNave}></div>
-                <div><Bars3Icon className="w-[2rem] md: hidden h-[2rem] cursor-pointer text-yellow-300"></Bars3Icon></div>
+                <div onClick={openNave}>
+                    <Bars3Icon className="w-[2rem] md: hidden h-[2rem] cursor-pointer text-yellow-300"></Bars3Icon>
+                </div>
             </div>
         </div>
     );
