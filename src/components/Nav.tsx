@@ -7,15 +7,18 @@ interface Props {
     servicosRef: React.RefObject<HTMLDivElement>;
     sobreRef: React.RefObject<HTMLDivElement>;
     projetosRef: React.RefObject<HTMLDivElement>;
-    contatoRef: React.RefObject<HTMLDivElement>;
     curriculoRef: React.RefObject<HTMLDivElement>;
 }
 
-const Nav = ({openNave, homeRef, servicosRef, sobreRef, projetosRef, contatoRef, curriculoRef}: Props) => {
+const Nav = ({openNave, homeRef, servicosRef, sobreRef, projetosRef,  curriculoRef}: Props) => {
     const handleLinkClick = (ref: React.RefObject<HTMLDivElement>) => {
         if (ref.current) {
             ref.current.scrollIntoView({ behavior: 'smooth' });
         }
+    };
+    const handleLinkedInClickLinkedin = () => {
+        const linkedInUrl = 'https://www.linkedin.com/in/la%C3%ADs-sousa-developer-android-flutter/';
+        window.open(linkedInUrl, '_blank');
     };
     return (
         <div className="w-[100%] sticky x-[1000] tap-0 h-[12vh] bg-[#141c27] shadow-md">
@@ -26,7 +29,7 @@ const Nav = ({openNave, homeRef, servicosRef, sobreRef, projetosRef, contatoRef,
                 <div className="nav-link" onClick={() => handleLinkClick(sobreRef)}>Sobre</div>
                 <div className="nav-link" onClick={() => handleLinkClick(curriculoRef)}>Currículo</div>
                 <div className="nav-link" onClick={() => handleLinkClick(projetosRef)}>Projetos</div>
-                <div className="nav-link" onClick={() => handleLinkClick(contatoRef)}>Contato</div>
+                <div className="nav-link" onClick={handleLinkedInClickLinkedin}>Linkedin</div>
                 <div onClick={openNave}></div>
                 <div><Bars3Icon className="w-[2rem] md: hidden h-[2rem] cursor-pointer text-yellow-300"></Bars3Icon></div>
             </div>

@@ -8,16 +8,20 @@ interface Props {
     servicosRef: React.RefObject<HTMLDivElement>;
     sobreRef: React.RefObject<HTMLDivElement>;
     projetosRef: React.RefObject<HTMLDivElement>;
-    contatoRef: React.RefObject<HTMLDivElement>;
     curriculoRef: React.RefObject<HTMLDivElement>;
 }
 
-const MobileNav = ({ nav, closeNav, homeRef, servicosRef, sobreRef, projetosRef, contatoRef, curriculoRef }: Props) => {
+const MobileNav = ({ nav, closeNav, homeRef, servicosRef, sobreRef, projetosRef, curriculoRef }: Props) => {
 
     const handleLinkClick = (ref: React.RefObject<HTMLDivElement>) => {
         if (ref.current) {
             ref.current.scrollIntoView({ behavior: 'smooth' });
         }
+    };
+
+    const handleLinkedInClickLinkedin = () => {
+        const linkedInUrl = 'https://www.linkedin.com/in/la%C3%ADs-sousa-developer-android-flutter/';
+        window.open(linkedInUrl, '_blank');
     };
 
     const navAnimation = nav ? 'translate-x-0' : '-translate-x-[100%]';
@@ -31,7 +35,7 @@ const MobileNav = ({ nav, closeNav, homeRef, servicosRef, sobreRef, projetosRef,
                 <div className="nav-link-mobile" onClick={() => handleLinkClick(sobreRef)}>Sobre</div>
                 <div className="nav-link-mobile" onClick={() => handleLinkClick(curriculoRef)}>Curriculo</div>
                 <div className="nav-link-mobile" onClick={() => handleLinkClick(projetosRef)}>Projetos</div>
-                <div className="nav-link-mobile" onClick={() => handleLinkClick(contatoRef)}>Contato</div>
+                <div className="nav-link-mobile" onClick={handleLinkedInClickLinkedin}>Linkedin</div>
             </div>
             <div onClick={closeNav} className='absolute z-[100000000] cursor-pointer top-[2rem] right-[2rem] w-[2rem] h-[2rem] text-yellow-400'>
                 <XMarkIcon />
