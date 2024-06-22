@@ -1,4 +1,5 @@
 import About from "@/components/About";
+import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import MobileNav from "@/components/MobileNav";
 import Nav from "@/components/Nav";
@@ -78,6 +79,7 @@ const HomePage = () => {
         <div id="projects" ref={projetosRef}>
           <Projects />
         </div>
+        <Footer/>
       </div>
     </div>
   </div>;
