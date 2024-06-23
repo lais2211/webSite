@@ -5,13 +5,13 @@ const TextEffect = () => {
         <TypeAnimation
             sequence={[
 
-                'Desenvolvedora Mobile',
+                'Web & Mobile',
                 1500,
                 'QA',
                 1500,
                 'Devops',
                 1500,
-                'Desenvolvedora Web',
+                'Backend',
                 1500,
             ]}
 
