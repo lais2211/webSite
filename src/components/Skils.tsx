@@ -17,7 +17,7 @@ const Skils = () => {
             <SkilsItem title="Analista de QA" year="2022" resume='Trabalhei com a equipe de testes da claro em projetos de grande escala, treinei equipes, utilizava de postman, cucumber, soapUi e ci/cd para testes. Documentava os processos com detalhes utilizando word e excel para descrição de casos.'/>
             </div>
             <div>
-            <SkilsItem title="Analista Programadora" year="2021 - 2023" resume='Liderei e desenvolvi em projetos para a empresa Claro, incluindo projeto de grande escala como LGPD e Netflix, desenvolvi apis e proxys com a plataforma Apigee, participava do processo desde as reuniões e criação de documentações até a subida em produção. 
+            <SkilsItem title="Analista Programadora" year="2021 - 2022" resume='Liderei e desenvolvi em projetos para a empresa Claro, incluindo projeto de grande escala como LGPD e Netflix, desenvolvi apis e proxys com a plataforma Apigee, participava do processo desde as reuniões e criação de documentações até a subida em produção. 
             Liderei para treinamentos de equipe e criei documentações de suporte.'/>
             </div>
             <div>
