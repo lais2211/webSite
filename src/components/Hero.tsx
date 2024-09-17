@@ -5,7 +5,7 @@ import Image from 'next/image';
 import ArrowDownTrayIcon from '@heroicons/react/16/solid/ArrowDownTrayIcon';
 const Hero = () => {
     const onButtonClick = () => {
-        const pdfUrl = "/pdf/cv.pdf";
+        const pdfUrl = "/pdf/cvLais.pdf";
         const link = document.createElement("a");
         link.href = pdfUrl;
         link.download = "curriculo Lais Sousa.pdf"; 
